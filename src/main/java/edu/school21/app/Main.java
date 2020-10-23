@@ -4,8 +4,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        ApplicationContext context = new
+                ClassPathXmlApplicationContext("context.xml");
         Printer printer = context.getBean("printerWithPrefix", Printer.class);
-        printer.print ("Hello!") ;
+        printer.print("Hello!");
     }
 }
